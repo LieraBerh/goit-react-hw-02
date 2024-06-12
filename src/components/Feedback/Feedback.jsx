@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const Feedback = ({ state, total }) => {
+const Feedback = ({ state, totalFeedback, positiveFeedback }) => {
   return (
     <div>
       <ul>
@@ -9,7 +9,8 @@ const Feedback = ({ state, total }) => {
           </li>
         ))}
       </ul>
-      <p>Total:{total}</p>
+      <p>Total: {totalFeedback}</p>
+      <p>Positive feedback: {positiveFeedback}%</p>
     </div>
   );
 };
