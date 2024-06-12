@@ -1,0 +1,34 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.optionBtn {
+  text-transform: capitalize;
+  width: 100px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #634832;
+  background-color: #dbc1ac;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+.optionBtn:hover {
+  background-color: #634832;
+  color: #dbc1ac;
+}
+.resetBtn {
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #967259;
+  background-color: #38220f;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+.resetBtn:hover {
+  background-color: #967259;
+  color: #38220f;
+}

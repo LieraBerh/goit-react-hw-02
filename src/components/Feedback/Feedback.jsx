@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
+import s from "./Feedback.module.css";
+
 const Feedback = ({ state, totalFeedback, positiveFeedback }) => {
   return (
-    <div>
-      <ul>
+    <div className={s.wrapper}>
+      <ul className={s.feedbackList}>
         {Object.entries(state).map(([key, value]) => (
           <li key={key}>
             {key}: {value}

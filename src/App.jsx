@@ -3,6 +3,8 @@ import Description from "./components/Description/Description";
 import Options from "./components/Options/Options";
 import Feedback from "./components/Feedback/Feedback";
 import Notification from "./components/Notification/Notification";
+import CoffeeMachine from "./components/CoffeeMachine/CoffeeMachine";
+import "./App.css";
 
 function App() {
   const defaultState = {
@@ -43,7 +45,7 @@ function App() {
   const positiveFeedback = Math.round((state.good / totalFeedback) * 100);
 
   return (
-    <>
+    <div>
       <Description />
       <Options
         options={Object.keys(state)}
@@ -59,7 +61,8 @@ function App() {
         />
       )}
       {totalFeedback <= 0 && <Notification />}
-    </>
+      <CoffeeMachine />
+    </div>
   );
 }
 

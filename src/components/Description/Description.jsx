@@ -1,8 +1,10 @@
+import s from "./Description.module.css";
+
 const Description = () => {
   return (
-    <div>
+    <div className={s.desc__wrapper}>
       <h1>Sip Happens Café</h1>
-      <p>
+      <p className={s.desc__text}>
         Please leave your feedback about our service by selecting one of the
         options below.
       </p>

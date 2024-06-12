@@ -1,0 +1,10 @@
+.desc__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.desc__text {
+  margin-top: 10px;
+}
